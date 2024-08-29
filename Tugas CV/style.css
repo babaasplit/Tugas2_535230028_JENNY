@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: rgb(172, 137, 137);
+    background-color: rgb(120, 120, 120);
 }
 
 .container {
@@ -25,4 +25,63 @@ body{
     background-color: #d1d1d1;
     width: 100%;
     color: #313131;
+}
+
+.container .card-one .profile{
+    display: inline-flex;
+    margin-bottom: 5px;
+    margin-left: -15px;
+    width: 220px;
+    height: 220px;
+    border-radius: 60%;
+    border: 4px solid;
+    background-image: url("profil.jpg");
+    background-position: center-top;
+    background-size; 100%;
+}
+
+.container .card-one .contact-box{
+    margin-top: 10px;
+}
+
+.container .card-one .contact-box>* {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.container .card-one .contact-box>* .text {
+    display: inline-flex;
+    word-break; break-all;
+}
+
+.container .card-one .personal-box{
+    margin-top: 10px;
+}
+
+.container .card-one .personal-box .dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #070707;
+    border-radius: 50%;
+    margin-left: 2px;
+}
+
+.container .card-one .personal-box .dot.active{
+    background-color: rgb(161, 150, 100);
+}
+
+.container .card-one .hobbies-box{
+    margin-top: 35px;
+}
+
+.container .card-one .hobbies-box .logo{
+    margin: 10px 0px;
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr;
+    font-size: 2.8em;
+    grid-row-gap: 10px;
 }
