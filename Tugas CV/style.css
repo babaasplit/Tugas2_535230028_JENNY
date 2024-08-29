@@ -6,15 +6,16 @@
 }
 
 body{
-    background-color: rgb(120, 120, 120);
+    background-color:rgb(120, 120, 120);
 }
 
 .container {
     margin: auto;
     display: grid;
-    grid-template-columns: 0.33fr 1fr;
-    width: 210mm;
-    height: 297mm;
+    grid-template-columns: 0.35fr 0.65fr;
+    width: 100%;
+    max-width: 210mm;
+    height: auto;
     overflow:hidden;
     box-shadow: 2px 2px 20px rgb(0, 0, 0, 0.7);
 }
@@ -57,11 +58,11 @@ body{
     word-break; break-all;
 }
 
-.container .card-one .personal-box{
+.container .card-one .languages-box{
     margin-top: 10px;
 }
 
-.container .card-one .personal-box .dot{
+.container .card-one .languages-box .dot{
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -70,8 +71,8 @@ body{
     margin-left: 2px;
 }
 
-.container .card-one .personal-box .dot.active{
-    background-color: rgb(161, 150, 100);
+.container .card-one .languages-box .dot.active{
+    background-color: rgb(87, 83, 91);
 }
 
 .container .card-one .hobbies-box{
@@ -82,6 +83,36 @@ body{
     margin: 10px 0px;
     display: grid;
     grid-template: 1fr 1fr/1fr 1fr;
-    font-size: 2.8em;
+    font-size: 2.2em;
     grid-row-gap: 10px;
+}
+
+.container .card-two {
+    background-color: #A9A9A9;
+    padding: 40px 20px;
+    padding-right: 75px;
+    color:#343030
+}
+
+.container .card-two .head-title{
+    font-size: 2.1em;
+    color:rgb(95, 95, 95);
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.container .card-two .box{
+    display: inline-block;
+    padding: 2px 10px;
+    margin-left: 0px;
+    margin-top: 5px;
+    background-color:#757070;
+}
+
+.container .card-two .group-1{
+    margin-top: 15px;
+    line-height:1.5;
+
 }
