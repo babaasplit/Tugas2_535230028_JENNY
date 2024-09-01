@@ -1,12 +1,12 @@
 * {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-    margin: 0px;
-    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color:rgb(120, 120, 120);
+body {
+    background-color: rgb(120, 120, 120);
 }
 
 .container {
@@ -15,8 +15,9 @@ body{
     grid-template-columns: 0.33fr 1fr;
     width: 210mm;
     height: 297mm;
-    overflow:hidden;
-    box-shadow: 2px 2px 20px rgb(0, 0, 0, 0.7);
+    overflow: hidden;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
 }
 
 .container .card-one {
@@ -25,22 +26,24 @@ body{
     background-color: #d1d1d1;
     width: 100%;
     color: #313131;
+    border-radius: 8px 0 0 8px;
 }
 
-.container .card-one .profile{
+.container .card-one .profile {
     display: inline-flex;
     margin-bottom: 5px;
     margin-left: -15px;
     width: 220px;
     height: 220px;
-    border-radius: 60%;
-    border: 4px solid;
+    border-radius: 50%;
+    border: 4px solid #313131;
     background-image: url("profil.jpg");
-    background-position: center-top;
-    background-size; 100%;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.container .card-one .contact-box{
+.container .card-one .contact-box {
     margin-top: 10px;
 }
 
@@ -50,18 +53,18 @@ body{
     grid-template-columns: 0.3fr 1fr;
     margin-top: 25px;
     align-items: center;
+    transition: color 0.3s ease-in-out;
 }
 
-.container .card-one .contact-box>* .text {
-    display: inline-flex;
-    word-break; break-all;
+.container .card-one .contact-box>*:hover .text {
+    color: rgb(52, 93, 124);
 }
 
-.container .card-one .languages-box{
+.container .card-one .languages-box {
     margin-top: 10px;
 }
 
-.container .card-one .languages-box .dot{
+.container .card-one .languages-box .dot {
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -70,18 +73,18 @@ body{
     margin-left: 2px;
 }
 
-.container .card-one .languages-box .dot.active{
+.container .card-one .languages-box .dot.active {
     background-color: rgb(87, 83, 91);
 }
 
-.container .card-one .hobbies-box{
+.container .card-one .hobbies-box {
     margin-top: 35px;
 }
 
-.container .card-one .hobbies-box .logo{
+.container .card-one .hobbies-box .logo {
     margin: 10px 0px;
     display: grid;
-    grid-template: 1fr 1fr/1fr 1fr;
+    grid-template: 1fr 1fr / 1fr 1fr;
     font-size: 2.2em;
     grid-row-gap: 10px;
 }
@@ -90,12 +93,13 @@ body{
     background-color: #A9A9A9;
     padding: 40px 20px;
     padding-right: 75px;
-    color:#343030
+    color: #343030;
+    border-radius: 0 8px 8px 0;
 }
 
-.container .card-two .head-title{
-    font-size: 1.5em;
-    color:rgb(95, 95, 95);
+.container .card-two .head-title {
+    font-size: 2.0em;
+    color: rgb(95, 95, 95);
     font-weight: 400;
     margin-left: -18px;
     margin-top: 10px;
@@ -103,39 +107,41 @@ body{
     line-height: 1.2;
 }
 
-.container .card-two .programmer-title{
-    margin-top: -10px;
+.container .card-two .student-title {
+    margin-top: -40px;
     margin-left: -18px;
-    font-size: 0.65em;
+    font-size: 0.40em;
 }
 
-.container .card-two .box{
+.container .card-two .box {
     display: inline-block;
-    padding: 10px;
-    width: 250px;
-    height: 85px;
+    padding: 8px;
+    width: 200px;
+    height: auto;
     margin-left: -20px;
-    margin-top: 2px;
-    background-color:#757070;
+    margin-top: 20px;
+    background-color: #757070;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.container .card-two .group-1{
-    margin-top: 15px;
-    line-height:1.5;
+.container .card-two .group-1 {
+    margin-top: 10px;
+    line-height: 1.5;
 }
 
-.container .card-two .group-2 .desk{
-    margin-top: 15px;
-    margin-left: 20px;
+.container .card-two .group-2 .desk {
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
-.container .card-two .group-2 .desk ul{
+.container .card-two .group-2 .desk ul {
     position: relative;
     margin-top: 20px;
     margin-left: 5px;
 }
 
-.container .card-two .group-2 .desk ul::before{
+.container .card-two .group-2 .desk ul::before {
     content: "";
     position: absolute;
     top: 12px;
@@ -143,15 +149,15 @@ body{
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color:rgb(91, 73, 73)
+    background-color: rgb(91, 73, 73);
 }
 
-.container .card-two .group-2 .desk ul li{
+.container .card-two .group-2 .desk ul li {
     list-style-type: none;
     position: relative;
 }
 
-.container .card-two .group-2 .desk ul li::before{
+.container .card-two .group-2 .desk ul li::before {
     content: "";
     position: absolute;
     top: 12px;
@@ -160,10 +166,29 @@ body{
     border-left: 2px solid;
 }
 
-.container .card-two .group-2 .desk ul:last-of-type li::before{
+.container .card-two .group-2 .desk ul:last-of-type li::before {
     content: none;
 }
 
-.container .card-two .group-2 .desk ul li div:last-of-type{
-    color:rgb(52, 93, 124)
+.container .card-two .group-2 .desk ul li div:last-of-type {
+    color: rgb(52, 93, 124);
+}
+
+.container .card-two .skills-box {
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.container .card-two .skills-box .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #070707;
+    border-radius: 50%;
+    margin-left: 2px;
+    margin-top: -4px;
+}
+
+.container .card-two .skills-box .dot.active {
+    background-color: rgb(87, 83, 91);
 }
