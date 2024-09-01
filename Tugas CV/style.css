@@ -3,11 +3,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-shadow: #070707;
 }
 
 body {
-    background-color: rgb(120, 120, 120);
+    background-color: linear-gradient(135deg, #ece9e6, #ffffff);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
 }
+
 
 .container {
     margin: auto;
@@ -17,7 +22,8 @@ body {
     height: 297mm;
     overflow: hidden;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
-    border-radius: 8px;
+    border-radius: 12px;
+    background: white;
 }
 
 .container .card-one {
@@ -36,7 +42,7 @@ body {
     width: 220px;
     height: 220px;
     border-radius: 50%;
-    border: 4px solid #313131;
+    border: 5px solid #313131;
     background-image: url("prof.jpg");
     background-position: center;
     background-size: cover;
@@ -44,7 +50,7 @@ body {
 }
 
 .container .card-one .contact-box {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .container .card-one .contact-box>* {
@@ -57,11 +63,20 @@ body {
 }
 
 .container .card-one .contact-box>*:hover .text {
-    color: rgb(52, 93, 124);
+    color: #007bff;
 }
 
 .container .card-one .languages-box {
-    margin-top: 10px;
+    margin-top: 40px;
+}
+
+.container .card-one .languages-box .p{
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.container .card-one .languages-box div{
+    display: inline-flex;
 }
 
 .container .card-one .languages-box .dot {
@@ -99,7 +114,10 @@ body {
 
 .container .card-two .head-title {
     font-size: 2.0em;
-    color: rgb(95, 95, 95);
+    font-weight: 200;
+    text-shadow: #321c1c;
+    font-style: initial;
+    color: rgb(64, 51, 51);
     font-weight: 400;
     margin-left: -18px;
     margin-top: -15px;
@@ -116,20 +134,19 @@ body {
 
 .container .card-two .box {
     display: inline-block;
-    padding: 15px; /* Increased padding for more space */
+    padding: 10px; /* Increased padding for more space */
     width: calc(100% - 40px); /* Adjust width to fill available space */
     margin-left: -20px;
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: #757070;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2);
 }
 
 .container .card-two .group-1 {
-    margin-top: 10px;
+    margin-top: 15px;
     line-height: 1.5;
 }
-
 
 .container .card-two .group-2 .desk {
     margin-top: 10px;
@@ -187,7 +204,7 @@ body {
     background-color: #070707;
     border-radius: 50%;
     margin-left: 2px;
-    margin-top: -4px;
+    margin-top: -3px;
 }
 
 .container .card-two .skills-box .dot.active {
